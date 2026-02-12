@@ -1662,16 +1662,8 @@ Continue with DD?
                 fi
             fi
         else
-            iso=$(curl -L https://fnnas.com/ | grep -o -m1 'https://[^"]*\.iso')
-
-            # curl 7.82.0+
-            # curl -L --json '{"url":"'$iso'"}' https://www.fnnas.com/api/download-sign
-
-            iso=$(curl -L \
-                -d '{"url":"'$iso'"}' \
-                -H 'Content-Type: application/json' \
-                https://www.fnnas.com/api/download-sign |
-                grep -o 'https://[^"]*')
+            iso=https://iso.liveupdate.fnnas.com/x86_64/trim/fnos-1.1.20-1596.iso?sign=56a5f2a63f4c27a5f0d9d06d10e511f5&t=1770908122
+            
         fi
 
         test_url "$iso" iso
