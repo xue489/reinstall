@@ -1662,7 +1662,7 @@ Continue with DD?
                 fi
             fi
         else
-            iso="https://iso.liveupdate.fnnas.com/x86_64/trim/fnos-1.1.20-1596.iso?sign=56a5f2a63f4c27a5f0d9d06d10e511f5&t=1770908122"
+            iso="https://iso.liveupdate.fnnas.com/x86_64/trim/fnos-1.1.20-1596.iso?sign=f908b91f064b0170ad373dc1c7308eca&t=1770907410"
             
         fi
 
